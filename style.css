@@ -1,0 +1,154 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    /*overflow-x: hidden;
+    overflow-y: auto;*/
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #e25e06;
+    color: #fff;
+    padding: 20px 0 5px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 25px;
+}
+
+nav ul li a:hover {
+    color: #a35801;
+}
+
+main {
+    padding: 10px;
+}
+
+.product_destaque {
+   /* width: 100vw;
+    height: 400px;
+    padding: 10px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*1fr 1fr 1fr;*/
+    grid-gap: 10px;
+  /*  justify-items: center;*/
+    text-align: justify; 
+}
+
+.product_destaque img{
+    width: 300px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.descricao{
+    font-size: 14px;
+    text-align: left;
+    line-height: 30px;
+}
+.product {
+    width: calc(15% - 20px);
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.info{
+    padding: 20px;
+    text-align: center;
+}
+
+.info h2{
+    text-align: justify;
+}
+
+.info .user{
+    margin: 20px;
+    padding: 10px;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-align: start;
+    align-items: center;
+    border: solid 1px;
+    border-color: rgb(211, 210, 210);
+    border-radius: 10px;
+
+}
+
+.info .user .perfil{
+    font-size: 10px;
+    text-align: center;
+}
+.info .user img{
+    width: 30px;
+    
+}
+.info .user .avaliacao{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    text-align: justify;
+    justify-items: center;
+}
+
+.info .user .avaliacao img{
+    width: 80px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #b45903;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d36f1e;
+}
+
+@media only screen and (max-width: 767px) {
+    .product {
+        width: 100%; /* Faz com que cada produto ocupe toda a largura da linha */
+        margin-bottom: 20px; /* Adiciona espaço entre os produtos */
+    }
+}
